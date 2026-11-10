@@ -1,0 +1,63 @@
+baseURL = "https://mohaqeq.github.io/"
+locale = "en-US"
+title = "Hamidreza Mohaqeq"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = false
+pagination.pagerSize = 12
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  description = "Notes on software, architecture, tools and side projects."
+  author = "Hamidreza Mohaqeq"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowShareButtons = false
+  hideFooter = false
+  mainSections = ["posts"]
+
+  [params.homeInfoParams]
+    Title = "Notes from the workbench"
+    Content = """I build things to find out how they work, and then write down what happened, including when it didn't work.
+Software architecture, developer tools, AI agents, graphics, teaching, and whatever I'm curious about next."""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/mohaqeq"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+  [params.label]
+    text = "mohaqeq / notes"
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 1
+[[menu.main]]
+  name = "Archive"
+  url = "/archives/"
+  weight = 2
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 3
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+[markup.goldmark.renderer]
+  unsafe = false
+[markup.highlight]
+  noClasses = false
+  style = "monokai"

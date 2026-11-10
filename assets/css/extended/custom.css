@@ -1,0 +1,79 @@
+/* Own look on top of PaperMod: editorial serif headings, warm accent, a "lab notebook" post list with a date column. */
+:root {
+  --accent: #b4441f;          /* burnt orange */
+  --accent-soft: #f6e7df;
+  --paper: #fbf8f3;           /* warm paper instead of plain white */
+  --theme: var(--paper);
+  --entry: #ffffff;
+  --border: #e6ded3;
+  --main-width: 760px;
+}
+:root[data-theme="dark"], .dark {
+  --accent: #f0a868;
+  --accent-soft: #3a2a1e;
+  --theme: #17181b;
+  --entry: #1f2125;
+  --border: #33363c;
+}
+
+body {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+h1, h2, h3, .post-title, .entry-header h2, .first-entry .entry-header h1, .logo a {
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: -0.01em;
+}
+code, pre, .post-meta, .entry-footer, .archive-meta {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* header: a small accent mark before the site name */
+.logo a::before {
+  content: "";
+  display: inline-block;
+  width: 0.7em; height: 0.7em;
+  margin-right: 0.45em;
+  background: var(--accent);
+  border-radius: 2px;
+  transform: rotate(45deg) translateY(-0.08em);
+}
+#menu a:hover, .post-content a, .toc a:hover { color: var(--accent); }
+.post-content a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+/* home intro: a left rule instead of a card */
+.first-entry { min-height: auto; margin: 2.5rem 0 2rem; padding-left: 1.2rem; border-left: 4px solid var(--accent); }
+.first-entry .entry-header h1 { font-size: 2.4rem; }
+
+/* post list as a notebook: date column on the left, no cards */
+.post-entry {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  column-gap: 1.25rem;
+  background: transparent;
+  border: none;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+  padding: 1.1rem 0;
+  margin: 0;
+  transition: background .15s;
+}
+.post-entry:hover { background: var(--accent-soft); transform: none; }
+.post-entry .entry-header { grid-column: 2; grid-row: 1; }
+.post-entry .entry-content { grid-column: 2; grid-row: 2; margin: 0.3rem 0 0; }
+.post-entry .entry-footer { grid-column: 1; grid-row: 1 / span 2; margin-top: 0.35rem; font-size: 0.78rem; line-height: 1.5; }
+.post-entry .entry-header h2 { font-size: 1.3rem; }
+@media (max-width: 600px) {
+  .post-entry { grid-template-columns: 1fr; }
+  .post-entry .entry-footer { grid-column: 1; grid-row: 3; }
+  .post-entry .entry-header, .post-entry .entry-content { grid-column: 1; }
+}
+
+/* post page */
+.post-title { font-size: 2.3rem; line-height: 1.2; }
+.post-content h2 { border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
+.post-content blockquote { border-inline-start: 3px solid var(--accent); background: var(--accent-soft); padding: 0.6rem 1rem; }
+.post-tags a { border: 1px solid var(--accent); color: var(--accent); background: transparent; border-radius: 999px; }
+.post-tags a:hover { background: var(--accent); color: var(--theme); }
+.post-content table th { background: var(--accent-soft); }
