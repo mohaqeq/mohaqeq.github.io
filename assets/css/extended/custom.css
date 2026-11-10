@@ -78,3 +78,6 @@ code, pre, .post-meta, .entry-footer, .archive-meta {
 .post-tags a { border: 1px solid var(--accent); color: var(--accent); background: transparent; border-radius: 999px; }
 .post-tags a:hover { background: var(--accent); color: var(--theme); }
 .post-content table th { background: var(--accent-soft); }
+
+/* PaperMod paints list pages (home, posts, tags) with the code-block grey; use the same paper colour everywhere */
+.list, [data-theme="dark"] .list { background: var(--theme); }
