@@ -11,7 +11,7 @@ pagination.pagerSize = 12
 
 [params]
   env = "production"
-  description = "Hamidreza Mohaqeq writes about software architecture, developer tools, AI coding agents, web UI, graphics and teaching kids to code, with the code for every post."
+  description = "Personal blog of Hamidreza Mohaqeq: software, side projects, experiments and other things worth writing down."
   author = "Hamidreza Mohaqeq"
   defaultTheme = "auto"
   ShowReadingTime = true
@@ -26,11 +26,10 @@ pagination.pagerSize = 12
 
   [params.homeInfoParams]
     Title = "Notes from the workbench"
-    Content = """I'm a software engineer who learns by building. This is where I write up what I built, why I built it, and what I
-learned, including the experiments that didn't go the way I expected.
+    Content = """I'm a software engineer. This is my personal blog: things I build, experiments I run, ideas I'm thinking
+through, and anything else I find worth writing down.
 
-You'll find posts on **software architecture and developer tools**, **AI coding agents and local LLMs**, **web UI**,
-**graphics**, and **teaching kids to code**. Each post links to the code, so you can run it yourself."""
+Mostly software, but not only."""
 
   [[params.socialIcons]]
     name = "github"
