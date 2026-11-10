@@ -11,7 +11,7 @@ pagination.pagerSize = 12
 
 [params]
   env = "production"
-  description = "Notes on software, architecture, tools and side projects."
+  description = "Hamidreza Mohaqeq writes about software architecture, developer tools, AI coding agents, web UI, graphics and teaching kids to code, with the code for every post."
   author = "Hamidreza Mohaqeq"
   defaultTheme = "auto"
   ShowReadingTime = true
@@ -26,8 +26,11 @@ pagination.pagerSize = 12
 
   [params.homeInfoParams]
     Title = "Notes from the workbench"
-    Content = """I build things to find out how they work, and then write down what happened, including when it didn't work.
-Software architecture, developer tools, AI agents, graphics, teaching, and whatever I'm curious about next."""
+    Content = """I'm a software engineer who learns by building. This is where I write up what I built, why I built it, and what I
+learned, including the experiments that didn't go the way I expected.
+
+You'll find posts on **software architecture and developer tools**, **AI coding agents and local LLMs**, **web UI**,
+**graphics**, and **teaching kids to code**. Each post links to the code, so you can run it yourself."""
 
   [[params.socialIcons]]
     name = "github"
@@ -37,7 +40,7 @@ Software architecture, developer tools, AI agents, graphics, teaching, and whate
     url = "/index.xml"
 
   [params.label]
-    text = "mohaqeq / notes"
+    text = "Hamidreza Mohaqeq"
 
 [[menu.main]]
   name = "Posts"

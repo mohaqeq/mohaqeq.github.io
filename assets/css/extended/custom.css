@@ -1,4 +1,4 @@
-/* Own look on top of PaperMod: editorial serif headings, warm accent, a "lab notebook" post list with a date column. */
+/* Own look on top of PaperMod: monospace headings, warm accent, a "lab notebook" post list with a date column. */
 :root {
   --accent: #b4441f;          /* burnt orange */
   --accent-soft: #f6e7df;
@@ -22,8 +22,9 @@ body {
   line-height: 1.7;
 }
 h1, h2, h3, .post-title, .entry-header h2, .first-entry .entry-header h1, .logo a {
-  font-family: "Fraunces", Georgia, serif;
-  letter-spacing: -0.01em;
+  font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 code, pre, .post-meta, .entry-footer, .archive-meta {
   font-family: "JetBrains Mono", ui-monospace, monospace;
@@ -44,7 +45,7 @@ code, pre, .post-meta, .entry-footer, .archive-meta {
 
 /* home intro: a left rule instead of a card */
 .first-entry { min-height: auto; margin: 2.5rem 0 2rem; padding-left: 1.2rem; border-left: 4px solid var(--accent); }
-.first-entry .entry-header h1 { font-size: 2.4rem; }
+.first-entry .entry-header h1 { font-size: 2.1rem; }
 
 /* post list as a notebook: date column on the left, no cards */
 .post-entry {
@@ -63,7 +64,7 @@ code, pre, .post-meta, .entry-footer, .archive-meta {
 .post-entry .entry-header { grid-column: 2; grid-row: 1; }
 .post-entry .entry-content { grid-column: 2; grid-row: 2; margin: 0.3rem 0 0; }
 .post-entry .entry-footer { grid-column: 1; grid-row: 1 / span 2; margin-top: 0.35rem; font-size: 0.78rem; line-height: 1.5; }
-.post-entry .entry-header h2 { font-size: 1.3rem; }
+.post-entry .entry-header h2 { font-size: 1.15rem; }
 @media (max-width: 600px) {
   .post-entry { grid-template-columns: 1fr; }
   .post-entry .entry-footer { grid-column: 1; grid-row: 3; }
@@ -71,7 +72,7 @@ code, pre, .post-meta, .entry-footer, .archive-meta {
 }
 
 /* post page */
-.post-title { font-size: 2.3rem; line-height: 1.2; }
+.post-title { font-size: 2rem; line-height: 1.25; }
 .post-content h2 { border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
 .post-content blockquote { border-inline-start: 3px solid var(--accent); background: var(--accent-soft); padding: 0.6rem 1rem; }
 .post-tags a { border: 1px solid var(--accent); color: var(--accent); background: transparent; border-radius: 999px; }
