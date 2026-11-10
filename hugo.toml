@@ -35,6 +35,9 @@ Mostly software, but not only."""
     name = "github"
     url = "https://github.com/mohaqeq"
   [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/mohaqeq"
+  [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
 

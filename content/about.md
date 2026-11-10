@@ -14,4 +14,5 @@ including when the result is negative.
 ## Elsewhere
 
 - Code: [github.com/mohaqeq](https://github.com/mohaqeq)
+- LinkedIn: [linkedin.com/in/mohaqeq](https://www.linkedin.com/in/mohaqeq)
 - Feed: [RSS](/index.xml)
