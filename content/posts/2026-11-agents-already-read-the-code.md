@@ -182,3 +182,6 @@ and the agents' tool-call logs. See [github.com/mohaqeq/unified-context-notation
 grader review used Nvidia Nemotron.*
 
 *Correction (2026-11-11): an earlier version said the no-docs agents kept the rules in "33 of 42 runs". The right figure is 27 of the 33 runs where a rule could be measured (6 broke a rule; in 9 runs every rule test had been excluded by the grader review).*
+
+*Follow-up (2026-11-18): the next four studies test the "eroded codebase" case. See
+[Coding agents repeat the wrong precedent. Here is what stops them](/posts/2026-11-agents-repeat-the-wrong-precedent/).*
